@@ -1,0 +1,107 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@600&display=swap');
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #005f73;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+nav a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #94d2bd;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Main Section */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+/* Card Style */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    font-family: 'Playfair Display', serif;
+    color: #005f73;
+    margin-bottom: 10px;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+    background-color: #ca6702;
+    color: #fff;
+    border-radius: 8px;
+}
